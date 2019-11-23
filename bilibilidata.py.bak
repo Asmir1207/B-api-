@@ -156,7 +156,7 @@ def parse(text,id2): #匹配文本数据
 def geturl(url,id):
 
    try:
-      ip = '91.233.228.102:80' #代理id可以做个代理池redis存放
+      ip = '91.233.228.102:80' #代理id可以做个代理池存放
       proxies = {'http': ip}
       response = requests.get(url,proxies=proxies)
       if response.status_code == 200:
